@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  overflow: hidden;
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 200px;
+    background-color: transparent;
+
+    &:focus {
+      outline-color: #f8b195;
+    }
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -moz-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -moz-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #f8b195;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #222
+      url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+      center no-repeat;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #f8b195;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #222
+      url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+      center no-repeat;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #f8b195;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #222
+      url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+      center no-repeat;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+canvas {
+  border: 1px solid white;
+  margin-top: 50px;
+}
+
+.dropdown {
+  float: top;
+  margin-right: 50%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  color: white;
+  width: 300px;
+  border: 1px solid #444;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dropdown-content input[type="range"] {
+  margin-left: 10px;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown-button:focus {
+  outline: none;
+}
+
+.button-28 {
+  background-color: #222;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  border-radius: 5px;
+  width: 300px;
+  height: 60px;
+  font-size: 15px;
+}
+
+.button-28:hover {
+  background-color: white;
+  color: #222;
+}
+
+.checkbox-wrapper-50 *,
+.checkbox-wrapper-50 *::before,
+.checkbox-wrapper-50 *::after {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-50 .plus-minus {
+  --primary: #222;
+  --secondary: white;
+  --duration: 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-mask-image: -webkit-radial-gradient(white, #222);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 240px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: 4px solid var(--primary);
+  background-size: 300% 300%;
+  transition: transform 0.3s;
+  transform: scale(var(--scale, 1)) translateZ(0);
+  -webkit-animation: var(--name, unchecked-50) var(--duration) ease forwards;
+  animation: var(--name, unchecked-50) var(--duration) ease forwards;
+  margin: 0;
+}
+.checkbox-wrapper-50 .plus-minus::before,
+.checkbox-wrapper-50 .plus-minus::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: var(--height, 16px);
+  left: 6px;
+  top: var(--top, 6px);
+  background: var(--background, var(--primary));
+  -webkit-animation: var(--name-icon-b, var(--name-icon, unchecked-icon-50))
+    var(--duration) ease forwards;
+  animation: var(--name-icon-b, var(--name-icon, unchecked-icon-50))
+    var(--duration) ease forwards;
+}
+.checkbox-wrapper-50 .plus-minus::before {
+  -webkit-clip-path: polygon(
+    0 6px,
+    6px 6px,
+    6px 0,
+    10px 0,
+    10px 6px,
+    16px 6px,
+    16px 10px,
+    10px 10px,
+    10px 16px,
+    6px 16px,
+    6px 10px,
+    0 10px
+  );
+  clip-path: polygon(
+    0 6px,
+    6px 6px,
+    6px 0,
+    10px 0,
+    10px 6px,
+    16px 6px,
+    16px 10px,
+    10px 10px,
+    10px 16px,
+    6px 16px,
+    6px 10px,
+    0 10px
+  );
+}
+.checkbox-wrapper-50 .plus-minus::after {
+  --height: 4px;
+  --top: 12px;
+  --background: var(--secondary);
+  --name-icon-b: var(--name-icon-a, checked-icon-50);
+}
+.checkbox-wrapper-50 .plus-minus:active {
+  --scale: 0.95;
+}
+.checkbox-wrapper-50 .plus-minus:checked {
+  --name: checked-50;
+  --name-icon-b: checked-icon-50;
+  --name-icon-a: unchecked-icon-50;
+}
+
+@-webkit-keyframes checked-icon-50 {
+  from {
+    transform: translateZ(12px);
+  }
+  to {
+    transform: translateX(16px) rotateY(90deg) translateZ(12px);
+  }
+}
+
+@keyframes checked-icon-50 {
+  from {
+    transform: translateZ(12px);
+  }
+  to {
+    transform: translateX(16px) rotateY(90deg) translateZ(12px);
+  }
+}
+@-webkit-keyframes unchecked-icon-50 {
+  from {
+    transform: translateX(-16px) rotateY(-90deg) translateZ(12px);
+  }
+  to {
+    transform: translateZ(12px);
+  }
+}
+@keyframes unchecked-icon-50 {
+  from {
+    transform: translateX(-16px) rotateY(-90deg) translateZ(12px);
+  }
+  to {
+    transform: translateZ(12px);
+  }
+}
+@-webkit-keyframes checked-50 {
+  from {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--primary) 0%,
+      var(--primary) 25%,
+      var(--secondary) 25.1%,
+      var(--secondary) 100%
+    );
+    background-position: 100% 50%;
+  }
+  to {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--primary) 0%,
+      var(--primary) 25%,
+      var(--secondary) 25.1%,
+      var(--secondary) 100%
+    );
+    background-position: 50% 50%;
+  }
+}
+@keyframes checked-50 {
+  from {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--primary) 0%,
+      var(--primary) 25%,
+      var(--secondary) 25.1%,
+      var(--secondary) 100%
+    );
+    background-position: 100% 50%;
+  }
+  to {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--primary) 0%,
+      var(--primary) 25%,
+      var(--secondary) 25.1%,
+      var(--secondary) 100%
+    );
+    background-position: 50% 50%;
+  }
+}
+@-webkit-keyframes unchecked-50 {
+  from {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--secondary) 0%,
+      var(--secondary) 25%,
+      var(--primary) 25.1%,
+      var(--primary) 100%
+    );
+    background-position: 100% 50%;
+  }
+  to {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--secondary) 0%,
+      var(--secondary) 25%,
+      var(--primary) 25.1%,
+      var(--primary) 100%
+    );
+    background-position: 50% 50%;
+  }
+}
+@keyframes unchecked-50 {
+  from {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--secondary) 0%,
+      var(--secondary) 25%,
+      var(--primary) 25.1%,
+      var(--primary) 100%
+    );
+    background-position: 100% 50%;
+  }
+  to {
+    background-image: radial-gradient(
+      ellipse at center,
+      var(--secondary) 0%,
+      var(--secondary) 25%,
+      var(--primary) 25.1%,
+      var(--primary) 100%
+    );
+    background-position: 50% 50%;
+  }
+}
