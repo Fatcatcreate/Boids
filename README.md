@@ -14,6 +14,7 @@ This project is a JavaScript-based simulation of boid flocking behavior, inspire
 1. Clone this repository:
    ```sh
    git clone https://github.com/Fatcatcreate/Boids.git
+   cd src
    ```
 2. Open `index.html` in a web browser.
 3. Adjust the simulation parameters using the UI controls.
