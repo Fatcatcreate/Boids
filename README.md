@@ -13,7 +13,7 @@ This project is a JavaScript-based simulation of boid flocking behavior, inspire
 ## Installation & Usage
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-username/boid-simulation.git
+   git clone https://github.com/Fatcatcreate/Boids.git
    ```
 2. Open `index.html` in a web browser.
 3. Adjust the simulation parameters using the UI controls.
@@ -88,20 +88,10 @@ class Boid {
 
 
 
-
-## Future Improvements
-- Add predator-prey interactions.
-- Implement obstacles within the environment.
-- Improve efficiency for larger boid counts.
-- Introduce different species with varying behaviors.
-
-## License
-This project is licensed under the MIT License. See `LICENSE` for details.
-
 ## Acknowledgments
 - Inspired by Craig Reynolds' "Boids" simulation.
 - Developed using JavaScript and HTML5 Canvas.
 
 ## Contact
-For questions or contributions, feel free to reach out or submit a pull request!
+submit a pull request!
 
