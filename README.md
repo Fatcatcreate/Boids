@@ -82,10 +82,9 @@ class Boid {
 ```
 
 ## Screenshots
-<img width="1512" alt="Screenshot 2025-02-28 at 08 32 07" src="https://github.com/user-attachments/assets/b0657d14-bfbe-4edf-8d3a-08e3d26bb645" />
-<img width="1512" alt="Screenshot 2025-02-28 at 08 35 34" src="https://github.com/user-attachments/assets/2b834de3-ce02-4aa4-ad6a-e15ebb954f21" />
-<img width="1512" alt="Screenshot 2025-02-28 at 08 35 49" src="https://github.com/user-attachments/assets/c64de1af-5d0c-4c51-828f-fdd5d54c6531" />
+<img width="1335" alt="Screenshot 2025-02-28 at 08 35 34" src="https://github.com/user-attachments/assets/cf24cdce-2bb0-4693-a962-f87a710fc8ef" />
 
+<img width="1395" alt="Screenshot 2025-02-28 at 08 35 49" src="https://github.com/user-attachments/assets/8be51f9e-c392-4b10-9be5-dcff75f2cf6e" />
 
 
 
