@@ -9,8 +9,6 @@ This project is a JavaScript-based simulation of boid flocking behavior, inspire
 - Cursor tracking for user interaction
 - Speed and range controls for customized movement
 
-## Demo
-![Boid Simulation Preview](images/boid_simulation_preview.png)
 
 ## Installation & Usage
 1. Clone this repository:
@@ -84,8 +82,13 @@ class Boid {
 ```
 
 ## Screenshots
-![Boid Flocking Example](images/boid_example1.png)
-![Boid Avoidance Example](images/boid_example2.png)
+<img width="1512" alt="Screenshot 2025-02-28 at 08 32 07" src="https://github.com/user-attachments/assets/b0657d14-bfbe-4edf-8d3a-08e3d26bb645" />
+<img width="1512" alt="Screenshot 2025-02-28 at 08 35 34" src="https://github.com/user-attachments/assets/2b834de3-ce02-4aa4-ad6a-e15ebb954f21" />
+<img width="1512" alt="Screenshot 2025-02-28 at 08 35 49" src="https://github.com/user-attachments/assets/c64de1af-5d0c-4c51-828f-fdd5d54c6531" />
+
+
+
+
 
 ## Future Improvements
 - Add predator-prey interactions.
